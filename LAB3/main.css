@@ -1,0 +1,56 @@
+body{
+    background-color: white;
+}
+.intro{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    text-align: left;
+}
+.buttons{
+    padding: 0.3em;
+    background-color: yellow;
+    border: 0.5em solid aqua;
+    text-align: center;
+    width: 10em;
+    color: black;
+    height: 1.5em;
+}
+.move{
+    position:relative;
+    animation-name: movingtext;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+
+}
+@keyframes movingtext{
+    0% {left: 1020px; top: 0px;}
+    100% {left: 0px; top:0px;}
+
+}
+.main_body{
+    
+    width: 1020px;
+    border: 0.1em solid;
+    text-align:left;
+    margin:0px auto;
+}
+.large{
+    font-size: 24px;
+    font-weight: bold;
+}
+.rotate{
+    transition: transform 2s;
+}
+.rotate:hover{
+    transform: rotate(360deg);
+}
+.boxes{
+    padding: 20px;
+    border: 1px solid;
+}
+.enlarge{
+    transition: transform 2s;
+}
+.enlarge:hover{
+    transform: scale(2,2);
+}
