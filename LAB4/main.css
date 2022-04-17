@@ -1,0 +1,94 @@
+
+.intro{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    text-align: left;
+}
+.buttons{
+    padding: 0.3em;
+    background-color: yellow;
+    border: 0.5em solid aqua;
+    text-align: center;
+    width: 10em;
+    color: black;
+    height: 1.5em;
+}
+.move{
+    position:relative;
+    animation-name: movingtext;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+
+}
+@keyframes movingtext{
+    0% {left: 1020px; top: 0px;}
+    100% {left: 0px; top:0px;}
+
+}
+
+.large{
+    font-size: 24px;
+    font-weight: bold;
+}
+.rotate{
+    transition: transform 2s;
+}
+.rotate:hover{
+    transform: rotate(360deg);
+}
+.boxes{
+    padding: 20px;
+    border: 1px solid;
+}
+.enlarge{
+    transition: transform 2s;
+}
+.enlarge:hover{
+    transform: scale(2,2);
+}
+.flex-container{
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.flex-container > div{
+    margin: 20px;
+    width: 150px;
+    border: 3px;
+    border-style: solid;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 24px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.column{
+    margin: 20px;
+    flex: 25%;
+    max-width: 20%;
+}
+@media (max-width: 480px) {
+    .column{
+        flex: 100%;
+        max-width: 100%;
+    }
+    .flex-container{
+        flex-direction: column;
+    }
+}
+@media (max-width: 800px) {
+    .column{
+        flex: 40%;
+        max-width: 40%;
+    }
+    .flex-container{
+        flex: 30%;
+        max-width: 30%;
+    }
+}
