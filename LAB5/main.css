@@ -1,0 +1,49 @@
+.main_body{
+    text-align: center;
+}
+
+.intro{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    text-align: left;
+}
+.buttons{
+    padding: 0.3em;
+    background-color: yellow;
+    border: 0.5em solid aqua;
+    text-align: center;
+    width: 10em;
+    color: black;
+    height: 1.5em;
+}
+
+.large{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.boxes{
+    padding: 20px;
+    border: 1px solid;
+}
+
+
+@media (max-width: 480px) {
+    .column{
+        flex: 100%;
+        max-width: 100%;
+    }
+    .flex-container{
+        flex-direction: column;
+    }
+}
+@media (max-width: 800px) {
+    .column{
+        flex: 40%;
+        max-width: 40%;
+    }
+    .flex-container{
+        flex: 30%;
+        max-width: 30%;
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>회원가입 페이지</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <body>
+        <h1 class="intro">Shin dongjoo`s online store</h1>
+        <p><a href="login.html">로그인</a> 회원가입</p>
+        <p>
+            <label>이름: <input name = "name" type="text" autofocus></label>
+        </p>
+        <p>
+            <label>프로필 색상: <input name = "color" type="color" required></label>
+        </p>
+        <p>
+            <label>생년월일: <input name = "date" type="date" ></label>
+        </p>
+        <p>
+            <label>기타: <input name = "others" type="text" placeholder="기타 특이사항 있을 시 입력"></label>
+        </p>
+        <p>
+            <label>전화번호: <input name = "tel" type="tel" placeholder="(###) ###-####)"
+                pattern="\(\d{3}\) \d{3}-\d{4}" required></label>
+        </p>
+        <p>
+            <label>하루 활동 시간: <input name = "number" type="number" min="0" max="24"
+                step="0.5" value="2"></label>
+        </p>
+        <p>
+            <label>아이디: <input name = "id" type="text" ></label>
+        </p>
+        <p>
+            <label>비밀번호: <input name = "password_private" type="text" ></label>
+        </p>
+
+        <div class="buttons">회원가입 </div>
+        <div class="buttons"> 취소</div>
+        <a href="login.html">로그인</a>
+        <a href="index.html">메인 페이지</a>
+    </body>
+</html>

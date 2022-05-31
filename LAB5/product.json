@@ -1,0 +1,26 @@
+[
+    {
+        "name" : "tuna",
+        "price" : 1000,
+        "image" : "tuna.jpg",
+        "type" : "meat" 
+    },
+    {
+        "name" : "chicken",
+        "price" : 5000,
+        "image" : "bhc.jpg",
+        "type" : "meat" 
+    },
+    {
+        "name" : "carrot",
+        "price" : 100,
+        "image" : "carrot.jpg",
+        "type" : "vegetable" 
+    },
+    {
+        "name" : "apple",
+        "price" : 7000,
+        "image" : "apple.jpg",
+        "type" : "vegetable" 
+    }
+]
